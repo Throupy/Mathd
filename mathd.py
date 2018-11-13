@@ -1,3 +1,6 @@
+import itertools
+
+
 def fib(terms):
     """Return fibonacci sequence up to the number given"""
     results = []
@@ -27,7 +30,7 @@ def square_nums(terms):
 
 
 def linear_seq(sequence, term):
-    """Finds the term given in any given linear sequence (same difference each time)"""
+    """Finds the term given in any given linear / arithmetic sequence (same difference each time)"""
     if len(sequence) < 2:
         raise ValueError("Sequence must have at least 2 terms")
     n = sequence[1] - sequence[0]
@@ -63,14 +66,6 @@ def quadr_seq(sequence, term=10, return_nth=False):
         except IndexError:
             pass
 
-    """
-    nth term of quadratic sequence is always in form:
-    an²+bn+c
-    2a = 2nd differance(always constant)
-    3a+b = 2nd term - 1st term
-    a+b+c = 1st term
-    using these rules I can calculate a, b and c.
-    """
     if third_difference[1:] != third_difference[:-1]:
         raise ValueError("Sequence is not quadratic!")
     a = int(third_difference[0] / 2)
@@ -86,4 +81,15 @@ def quadr_seq(sequence, term=10, return_nth=False):
             c = f"+{c}"
         return f"{a}n²{b}n{c}"
     else:
-        return (a * n_sqrd) + (b * term) + c
+        return f"Term {term} =  {(a * n_sqrd) + (b * term) + c}"
+
+
+def lcm(x, y):
+    """Return the lowest common mutliple of two numbers given"""
+    greater = y
+    if x > y:
+        greater = x
+    while True:
+        if greater % x == 0 and greater % y == 0:
+            return greater
+        greater += 1
