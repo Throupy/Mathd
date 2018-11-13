@@ -26,3 +26,6 @@ if True, return nth will return the nth term formula.
 
 #### `square_nums(terms{integer})`
 Return square numbers with as many terms as specified
+
+#### `lcm(x{integer}, y{integer})`
+Returns the lowest common multiple of two numbers specified
