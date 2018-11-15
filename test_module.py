@@ -1,2 +1,2 @@
 import mathd
-print(mathd.lcm(2342, 821))
+print(mathd.plot([1,2,3,4],[1,2,3,4]))
