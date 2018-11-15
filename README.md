@@ -29,3 +29,12 @@ Return square numbers with as many terms as specified
 
 #### `lcm(x{integer}, y{integer})`
 Returns the lowest common multiple of two numbers specified
+
+#### `hcf(x{integer}, y{integer})`
+Returns the highest common factor of two numbers specified
+
+#### `avg(data{list})`
+Returns the average of a given dataset
+
+#### `mode(data{list})`
+Returns the most common element in a given dataset, if one is not present then it will return the lowest value.
