@@ -8,6 +8,10 @@ This is a mathematical module that does complex calculations usually to do with 
 ### Setup
 ```python
 import mathd
+
+>> mathd = mathd()
+>> mathd.square_nums(5)
+>> 1, 4, 9, 16, 25
 ```
 
 ### Methods
