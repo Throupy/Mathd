@@ -42,3 +42,12 @@ Returns the average of a given dataset
 
 #### `mode(data{list})`
 Returns the most common element in a given dataset, if one is not present then it will return the lowest value.
+
+#### `gradient(points{list})`
+Finds and returns the gradient of a line given any two points.
+
+#### `findYIntercept(points{list})`
+Finds and returns the Y intercept (c) of a line given any two points.
+
+#### `lineEquation(points{list})`
+Finds and returns the equation of a line given any tw... does anyone even read this?
